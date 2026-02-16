@@ -1,4 +1,4 @@
-# Dynamic Array (C) — TerraWine / Coursework Utility
+# Dynamic Array (C) — Coursework Utility
 
 A small **dynamic array / “ArrayList-like” container written in C**.
 It stores elements in a single contiguous buffer (`void* data`) and grows/shrinks with `realloc()` as items are appended or removed.
@@ -115,6 +115,3 @@ Typical flow:
 
 ---
 
-### Note
-
-I wrote this README based on the API/function names you’ve been using in chat. If you re-upload the latest files and you want the README to match the *exact* signatures/comments, I can align it precisely.
