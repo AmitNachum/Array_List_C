@@ -20,8 +20,6 @@ pipeline {
           set -e
           echo "building docker image: $IMAGE_TAG"
           docker build -t "$IMAGE_TAG" .
-          echo "=== building the project ==="
-          make
         '''
       }
     }
