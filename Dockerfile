@@ -8,7 +8,7 @@ WORKDIR /app
 COPY  . .
 
 # step into the app source file and run make
-WORKDIR /app/Dynamic_array 
+WORKDIR /app/Dynamic_Array 
 RUN make
 
 # Run the program
