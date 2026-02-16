@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    IMAGE_NAME = 'array_list_c'
+    IMAGE_NAME = 'amitnachum/array_list_c'
     VER        = 'latest'
     IMAGE_TAG  = "${IMAGE_NAME}:${VER}"
   }
@@ -34,7 +34,7 @@ pipeline {
           sh '''
             set -e
             echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
-            docker push amitnachum/"$IMAGE_TAG"
+            docker push "$IMAGE_TAG"
             docker logout
           '''
         }
