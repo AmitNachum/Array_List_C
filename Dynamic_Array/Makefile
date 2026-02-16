@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -g -Wall -Wextra -Wpedantic -Werror
 
-SRC = Dynamic.c
+SRC = Dynamic_Array.c
 OBJ = $(SRC:.c=.o)
 TARGET = ArrayList
 
@@ -14,5 +14,6 @@ $(TARGET): $(OBJ)
 .PHONY: clean
 clean:
 	rm -f $(OBJ) $(TARGET)
+
 
 
