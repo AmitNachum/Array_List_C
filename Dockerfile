@@ -5,9 +5,10 @@ FROM gcc:13
 WORKDIR /app
 
 # Copy the project's directory content from the current directory to docker's current direcotry
-COPY  Dynamic_Array/ .
+COPY  . .
 
-# Run make
+# step into the app source file and run make
+WORKDIR /app/Dynamic_array 
 RUN make
 
 # Run the program
