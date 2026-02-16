@@ -9,8 +9,9 @@ $(TARGET): $(OBJ)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJ)
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $<
+	$(CC) $(CFLAGS) -c $< $@
 
 .PHONY: clean
 clean:
 	rm -f $(OBJ) $(TARGET)
+
